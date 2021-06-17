@@ -21,7 +21,7 @@ public class ChangeDimension
 		if (ep instanceof ServerPlayerEntity)
 		{
 			ServerPlayerEntity player = (ServerPlayerEntity) ep;
-			player.setExperienceLevel(player.experienceLevel);
+			player.setExperienceLevels(player.experienceLevel);
 		}
 	}
 }
