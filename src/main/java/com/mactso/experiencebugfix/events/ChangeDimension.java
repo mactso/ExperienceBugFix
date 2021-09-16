@@ -3,8 +3,8 @@ package com.mactso.experiencebugfix.events;
 
 import com.mactso.experiencebugfix.Main;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.player.PlayerEvent.PlayerChangedDimensionEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,10 +17,9 @@ public class ChangeDimension
 	@SubscribeEvent
 	public static void onChange(PlayerChangedDimensionEvent event)
 	{
-		PlayerEntity ep = event.getPlayer();
-		if (ep instanceof ServerPlayerEntity)
+		Player ep = event.getPlayer();
+		if (ep instanceof ServerPlayer player)
 		{
-			ServerPlayerEntity player = (ServerPlayerEntity) ep;
 			player.setExperienceLevels(player.experienceLevel);
 		}
 	}
