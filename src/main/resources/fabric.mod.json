@@ -1,35 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "experiencebugfix",
   "version": "${version}",
 
   "name": "Experience Bug Fix",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Experience Bug Fix.",
   "authors": [
     "Mactso, Lupicus"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/experience-bug-fix",
+    "sources": "https://github.com/mactso/ExperienceBugFix",
+    "issues": "https://github.com/mactso/ExperienceBugFix/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT License",
+  "icon": "assets/experiencebugfix/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.Main"
+      "com.mactso.experiencebugfix.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "experiencebugfix.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x"
   },
   "suggests": {
     "another-mod": "*"
