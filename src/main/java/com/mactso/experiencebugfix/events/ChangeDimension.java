@@ -17,7 +17,7 @@ public class ChangeDimension
 	@SubscribeEvent
 	public static void onChange(PlayerChangedDimensionEvent event)
 	{
-		Player ep = event.getPlayer();
+		Player ep = event.getEntity();
 		if (ep instanceof ServerPlayer player)
 		{
 			player.setExperienceLevels(player.experienceLevel);
