@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[41,)"
 license="MIT License"
 [[mods]]
 modId="experiencebugfix"
@@ -13,7 +13,7 @@ description='Experience Bug Fix.'
 [[dependencies.experiencebugfix]]
     modId="forge"
     mandatory=true
-loaderVersion="[43,)"
+loaderVersion="[41,)"
     ordering="NONE"
     side="SERVER"
 
