@@ -24,7 +24,6 @@
     ]
   },
   "mixins": [
-    "experiencebugfix.mixins.json"
   ],
 
   "depends": {
